@@ -94,6 +94,32 @@ def home():
                 font-size: 13px; pointer-events: none; border: 1px solid #1f2937;
             }
             .stat-val { color: #fff; font-weight: bold; }
+            #video-feed {
+                position: absolute;
+                bottom: 140px; /* Placé juste au-dessus de la télémétrie */
+                left: 20px;
+                z-index: 10;
+                width: 280px;
+                height: 158px;
+                background: rgba(10, 10, 15, 0.85);
+                border: 1px solid #1f2937;
+                border-radius: 6px;
+                padding: 5px;
+                box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            }
+            #video-feed iframe {    
+                width: 100%;
+                height: 100%;
+                border: none;
+                border-radius: 4px;
+            }
+            .video-title {
+                color: #6fffe6;
+                font-size: 10px;
+                margin-bottom: 4px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
         </style>
     </head>
     <body>
@@ -102,6 +128,13 @@ def home():
             POS : <span id="coords" class="stat-val">LAT: -- | LON: --</span><br>
             ALT : <span id="alt" class="stat-val">--</span> km | V: <span id="speed" class="stat-val">--</span> km/h
         </div>
+        <div id="video-feed">
+    <div class="video-title">🔴 ISS Live External Feed</div>
+        <iframe src="https://www.youtube.com/embed/jPTD2gnZFUw?autoplay=1&mute=1&controls=0&showinfo=0&rel=0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+        </iframe>
+    </div>
         
         <div id="globeViz"></div>
 
