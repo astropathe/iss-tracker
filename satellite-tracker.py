@@ -130,11 +130,11 @@ def home():
         </div>
         <div id="video-feed">
     <div class="video-title">🔴 ISS Live External Feed</div>
-        <iframe src="https://www.youtube.com/embed/jPTD2gnZFUw?autoplay=1&mute=1&controls=0&showinfo=0&rel=0" 
-                allow="autoplay; encrypted-media" 
-                allowfullscreen>
-        </iframe>
-    </div>
+    <iframe src="https://www.ustream.tv/embed/17074538?html5=1&autoplay=1&mute=1&controls=0" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen>
+    </iframe>
+</div>
         
         <div id="globeViz"></div>
 
